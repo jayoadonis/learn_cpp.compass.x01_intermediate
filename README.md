@@ -1,4 +1,4 @@
-# learn_cpp.compass.x00_intermediate ![C++ Project](https://img.shields.io/badge/C++_Project-gray?logo=cplusplus&logocolor=skyblue&style=for-the-badge)
+# learn_cpp.compass.x00_intermediate ![C++ Project](https://img.shields.io/badge/C++_Project-gray?logo=cplusplus&logoColor=skyblue&style=for-the-badge)
 
 [![License GPL v3.0](https://img.shields.io/badge/License-GPL_v3.0-blue?logo=gnu&style=for-the-badge)]()&emsp;[![License AGPL v3.0](https://img.shields.io/badge/License-AGPL_v3.0-blue?logo=gnu&style=for-the-badge)]()
 
@@ -27,11 +27,11 @@ A personal journey exploring C++. Wellcome to the middle of the journey.
 [^ToC](#table-of-contents)
 
 ## Feature
-+ []
++ [x00_oop*](./x00_oop)
 
-## Usage
+<!-- ## Usage
 ```bash
-```
+``` -->
 
 [^ToC](#table-of-contents)
 
