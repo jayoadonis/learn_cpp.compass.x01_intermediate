@@ -2,6 +2,7 @@
 .vsc/
 .vs/
 .idea/
+.cache/
 
 .misc/
 .repo/
