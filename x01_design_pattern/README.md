@@ -1,4 +1,4 @@
-# x01_design_pattern ![C++ Project]()
+# x01_design_pattern ![C++ Project](https://img.shields.io/badge/C++_Project-gray?logo=cplusplus&logoColor=skyblue&style=for-the-badge)
 
 [![]()]()&emsp;[![]()]()
 
