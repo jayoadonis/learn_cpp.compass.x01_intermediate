@@ -12,9 +12,9 @@ build-*/
 target/
 output/
 out/
-dest/
-dist/
 install/
+dist/
+dest/
 
 .env*
 !.env.public
