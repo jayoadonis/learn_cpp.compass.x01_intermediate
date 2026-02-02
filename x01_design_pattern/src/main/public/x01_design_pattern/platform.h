@@ -14,8 +14,11 @@ namespace x01_design_pattern {
   };
 
   char const* get_platform_name(Platform const& p) noexcept;
+
   std::ostream& operator<<(
     std::ostream& out_stream, Platform const& p
   ) noexcept;
+
+  extern Platform const CURRENT_PLATFORM;
 }
 #endif

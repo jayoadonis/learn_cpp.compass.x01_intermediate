@@ -1,6 +1,7 @@
 #include <cstdio>
 
 #include <catch2/catch_test_macros.hpp>
+#include <iostream>
 
 #include "x01_design_pattern/creational/factory/BombSoup.h"
 #include "x01_design_pattern/creational/factory/BombSoupFactory.h"
@@ -41,5 +42,7 @@ TEST_CASE("test_factory") {
   std::printf("::: %s\n", dp::get_platform_name(dp::Platform::Windows));
   std::printf("::: %s\n", dp::get_platform_name(dp::Platform::None));
   std::printf("::: %s\n", dp::get_platform_name(dp::Platform::WHAT));
+  std::printf("::: %s\n", dp::get_platform_name(dp::CURRENT_PLATFORM));
+  std::cout << "::: " << dp::CURRENT_PLATFORM << "\n";
   std::printf("::: %s\n", "hi...");
 }
