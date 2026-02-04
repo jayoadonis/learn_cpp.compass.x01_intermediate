@@ -37,12 +37,15 @@ TEST_CASE("test_factory") {
   // ptr_soup_factory->orderSoup();
   // delete ptr_soup_factory;
 
-  std::printf("::: %s\n", dp::get_platform_name(dp::Platform::MACOS));
-  std::printf("::: %s\n", dp::get_platform_name(dp::Platform::Linux));
-  std::printf("::: %s\n", dp::get_platform_name(dp::Platform::Windows));
-  std::printf("::: %s\n", dp::get_platform_name(dp::Platform::None));
-  std::printf("::: %s\n", dp::get_platform_name(dp::Platform::WHAT));
-  std::printf("::: %s\n", dp::get_platform_name(dp::CURRENT_PLATFORM));
+  std::printf("::: %s\n", get_platform_name(dp::Platform::MACOS));
+  std::printf("::: %s\n", get_platform_name(dp::Platform::Linux));
+  std::printf("::: %s\n", get_platform_name(dp::Platform::Windows));
+  std::printf("::: %s\n", get_platform_name(dp::Platform::None));
+  std::printf("::: %s\n", get_platform_name(dp::Platform::WHAT));
+  std::printf("::: %s\n", get_platform_name(dp::CURRENT_PLATFORM));
   std::cout << "::: " << dp::CURRENT_PLATFORM << "\n";
   std::printf("::: %s\n", "hi...");
+
+  REQUIRE(dp::CURRENT_PLATFORM != dp::Platform::None);
+  REQUIRE(static_cast<unsigned>(dp::Platform::Windows) == 1u);
 }
