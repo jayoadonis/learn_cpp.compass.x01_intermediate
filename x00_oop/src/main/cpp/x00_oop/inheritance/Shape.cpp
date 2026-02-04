@@ -3,10 +3,12 @@
 
 namespace x00_oop::inheritance {
   Shape::Shape() : area{0.0} {
-    fmt::println("::: {} Shape ctor(V)", (void*)this);
+    fmt::println(":::12 {:p} Shape ctor(V)", (void*)this);
   };
   Shape::~Shape() {
-    fmt::println("::: {} Shape dtor(V)", (void*)this);
+    fmt::println(":::34 0x{0:0{1}X} Shape dtor(V)",
+      (std::uintptr_t)this,
+      (int)(sizeof(std::uintptr_t)*2));
     this->area = 0.0;
   };
   long double Shape::get_area() const {
