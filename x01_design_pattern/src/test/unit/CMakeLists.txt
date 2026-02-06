@@ -1,7 +1,7 @@
 
 add_executable(${__TARGET_UNIT_TEST})
 
-# add_dependencies(${__TARGET_UNIT_TEST} ${__TARGET_LIB})
+add_dependencies(${__TARGET_UNIT_TEST} ${__TARGET_LIB})
 
 target_compile_features(${__TARGET_UNIT_TEST} PUBLIC cxx_std_17)
 
@@ -27,7 +27,7 @@ target_link_libraries(${__TARGET_UNIT_TEST}
 add_test(NAME ${__TARGET_UNIT_TEST} COMMAND ${__TARGET_UNIT_TEST})
 set_tests_properties(${__TARGET_UNIT_TEST} PROPERTIES LABELS "unit")
 
-add_custom_target("unit"
+add_custom_target("run-unit-test"
   COMMAND
     ${CMAKE_CTEST_COMMAND}
     --test-dir ${CMAKE_BINARY_DIR}
@@ -35,4 +35,11 @@ add_custom_target("unit"
     -L "unit"
     -VV
   COMMENT "::: Run unit-test."
-  DEPENDS ${__TARGET_UNIT_TEST})
+  DEPENDS "build-unit-test")
+
+add_custom_target("build-unit-test"
+  COMMAND
+    ${CMAKE_COMMAND}
+    --build ${CMAKE_BINARY_DIR}
+    --config $<CONFIG>
+  COMMENT "::: Build unit-test")
