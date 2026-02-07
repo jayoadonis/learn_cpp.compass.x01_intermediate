@@ -1,4 +1,4 @@
-# Factory Design Pattern
+# Factory Creational Design Pattern
 
 ## Table of Contents
 + [root](../../../../../..)
