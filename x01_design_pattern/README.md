@@ -29,3 +29,4 @@ A personal journey exploring C++.
 ## Usage
 
 ## License
+[![License GPL v3.0](https://img.shields.io/badge/License_GPL-v3.0-blue?logo=gnu&style=for-the-badge)]()&emsp;[![License AGPL v3.0](https://img.shields.io/badge/License_AGPL-v3.0-blue?logo=gnu&style=for-the-badge)]()
