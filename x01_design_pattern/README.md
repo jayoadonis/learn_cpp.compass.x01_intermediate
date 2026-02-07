@@ -23,10 +23,11 @@ A personal journey exploring C++.
 + C/C++ compiler that support *C++ std (>=17)*
 
 ## Feature
-+ [creational]()
-  + [factory]()
++ [creational](src/main/public/x01_design_pattern/creational)
+  + [shared/model](src/main/public/x01_design_pattern/creational/shared/model)
+  + [factory](src/main/public/x01_design_pattern/creational/factory)
 
 ## Usage
 
 ## License
-[![License GPL v3.0](https://img.shields.io/badge/License_GPL-v3.0-blue?logo=gnu&style=for-the-badge)]()&emsp;[![License AGPL v3.0](https://img.shields.io/badge/License_AGPL-v3.0-blue?logo=gnu&style=for-the-badge)]()
+[![License GPL v3.0](https://img.shields.io/badge/License-GPL_v3.0-blue?logo=gnu&style=for-the-badge)]()&emsp;[![License AGPL v3.0](https://img.shields.io/badge/License-AGPL_v3.0-blue?logo=gnu&style=for-the-badge)]()
