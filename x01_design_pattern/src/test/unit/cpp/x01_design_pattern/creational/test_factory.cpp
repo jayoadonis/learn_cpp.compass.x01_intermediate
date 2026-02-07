@@ -11,7 +11,7 @@
 
 namespace dp = x01_design_pattern;
 
-TEST_CASE("test_factory") {
+TEST_CASE("factory") {
 
   dp::creational::factory::SoupFactory* ptr_soup_factory
     = new dp::creational::factory::BombSoupFactory();

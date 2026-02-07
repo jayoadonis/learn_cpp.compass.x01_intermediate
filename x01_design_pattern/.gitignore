@@ -7,6 +7,9 @@
 .cache/
 .repo/
 
+#REM: Internal header
+# src/main/private/
+
 build/
 build-*/
 target/
