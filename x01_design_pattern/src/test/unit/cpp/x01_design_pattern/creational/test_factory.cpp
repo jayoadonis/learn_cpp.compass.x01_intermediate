@@ -48,4 +48,5 @@ TEST_CASE("test_factory") {
 
   REQUIRE(dp::CURRENT_PLATFORM != dp::Platform::None);
   REQUIRE(static_cast<unsigned>(dp::Platform::Windows) == 1u);
+
 }
