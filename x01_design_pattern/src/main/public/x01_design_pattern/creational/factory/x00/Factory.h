@@ -10,9 +10,9 @@ namespace x01_design_pattern::creational::factory::x00 {
       explicit Factory();
     public:
       virtual ~Factory() noexcept;
-      virtual shared::model::x00::IProduct* order();
+      virtual shared::model::x00::IProduct *order();
     protected:
-      virtual shared::model::x00::IProduct* create() = 0;
+      virtual shared::model::x00::IProduct *create() = 0;
   };
 }
 #endif
