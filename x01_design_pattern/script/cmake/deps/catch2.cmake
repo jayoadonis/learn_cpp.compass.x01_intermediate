@@ -13,4 +13,7 @@ FetchContent_Declare(Catch2
 
 FetchContent_MakeAvailable(Catch2)
 
+#REM: Importing 'catch_discover_tests(...)', for showing multiple catch2 test-cases result
+include(${catch2_SOURCE_DIR}/extras/Catch.cmake)
+
 include(CTest)

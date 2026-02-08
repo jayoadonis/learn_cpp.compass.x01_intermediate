@@ -7,9 +7,26 @@ target_compile_options(
   PRIVATE
     $<$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>:
       -Wall;-Wextra;-Wpedantic>
+
     $<$<CXX_COMPILER_ID:MSVC>:
       /W3;/W4;/Wall;/permissive->
+
+    # $<$<AND:$<CONFIG:Debug>,$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>>:
+    #   -fsanitize=address,undefined>
+
+    # $<$<AND:$<CONFIG:Debug>,$<CXX_COMPILER_ID:MSVC>>:
+    #   /sanitize=address>
 )
+
+# target_link_options(
+#   ${__TARGET_LIB}
+#   PRIVATE
+#     $<$<AND:$<CONFIG:Debug>,$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>>:
+#       -fsanitize=address,undefined>
+
+#     $<$<AND:$<CONFIG:Debug>,$<CXX_COMPILER_ID:MSVC>>:
+#       /sanitize=address>
+# )
 
 string(TOLOWER ${CMAKE_CXX_COMPILER_ID} __cxx_compiler_id_tolower)
 string(TOLOWER ${CMAKE_SYSTEM_NAME} __system_name_tolower)
