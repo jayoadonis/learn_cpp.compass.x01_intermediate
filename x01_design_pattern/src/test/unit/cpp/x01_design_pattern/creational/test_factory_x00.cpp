@@ -1,4 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
+#include <iostream>
 
 #include "x01_design_pattern/creational/shared/model/x00/IProduct.h"
 #include "x01_design_pattern/creational/factory/x00/Factory.h"
