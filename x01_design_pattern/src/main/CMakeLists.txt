@@ -32,7 +32,7 @@ string(TOLOWER ${CMAKE_CXX_COMPILER_ID} __cxx_compiler_id_tolower)
 string(TOLOWER ${CMAKE_SYSTEM_NAME} __system_name_tolower)
 set_target_properties(${__TARGET_LIB}
   PROPERTIES
-    RUNTIME_OUTPUT_NAME ${__TARGET_LIB}-$<LOWER_CASE:$<CONFIG>>-${__cxx_compiler_id_tolower}-${__system_name_tolower})
+    OUTPUT_NAME ${__TARGET_LIB}-$<LOWER_CASE:$<CONFIG>>-${__cxx_compiler_id_tolower}-${__system_name_tolower})
 
 file(GLOB_RECURSE __target_lib_src_main_cpp CONFIGURE_DEPENDS
   ${CMAKE_CURRENT_SOURCE_DIR}/cpp/${PROJECT_NAME}/*.cpp
