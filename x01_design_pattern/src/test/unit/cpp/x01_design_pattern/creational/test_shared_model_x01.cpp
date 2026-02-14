@@ -4,6 +4,8 @@
 #include "x01_design_pattern/creational/shared/model/x01/Glow.h"
 #include "x01_design_pattern/creational/shared/model/x01/AGlow.h"
 
+#include "x01_design_pattern/creational/shared/model/x01/BGlow.h"
+
 namespace dp = x01_design_pattern;
 namespace shared::model {
   namespace x01 = dp::creational::shared::model::x01;
@@ -12,6 +14,14 @@ namespace shared::model {
 TEST_CASE("test_shared_model_x01 AGlow") {
   shared::model::x01::AGlow aGlowProduct;
   shared::model::x01::Glow *glowProduct = &aGlowProduct;
+  shared::model::x01::IProduct *product = glowProduct;
+
+  product->prepare();
+}
+
+TEST_CASE("test_shared_model_x01 BGlow") {
+  shared::model::x01::BGlow bGlowProduct;
+  shared::model::x01::Glow *glowProduct = &bGlowProduct;
   shared::model::x01::IProduct *product = glowProduct;
 
   product->prepare();
